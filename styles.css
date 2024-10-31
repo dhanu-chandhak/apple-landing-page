@@ -1,0 +1,523 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* navbar  */
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.589);
+  z-index: 100;
+  color: white;
+  padding: 10px 0px;
+}
+#innerNav {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 13px;
+  padding: 0;
+}
+#innerNav > div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#navList {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#navList > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.logoSize {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  filter: invert(1);
+}
+#hamburger {
+  display: none;
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+#resposiveNav {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+#closeBtn {
+  text-align: end;
+  font-size: 20px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+#resposiveNav > ul {
+  list-style: none;
+}
+#resposiveNav > ul > li {
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#resposiveNav > ul > li:hover {
+  text-decoration: underline;
+}
+
+/* top heading  */
+#appleIntelligenceDiv {
+  position: relative;
+  height: 330px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 179, 255, 0.721),
+    rgba(0, 0, 255, 0.721),
+    rgba(255, 0, 0, 0.581),
+    rgba(255, 166, 0, 0.673)
+  );
+}
+
+#blurOverlay {
+  z-index: 5;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(0deg, black 0%, transparent 100%);
+  width: 100%;
+  height: 100%;
+}
+
+#miniTopDiv {
+  z-index: 10;
+  color: white;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+/* product section  */
+.macmini_div {
+  padding-top: 20px;
+  width: 100%;
+  background-image: url("./image/mac_mini.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.imac_Div {
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
+  background-image: url("./image/monitors.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.macbook_div {
+  color: white;
+  padding-top: 20px;
+  position: relative;
+  background-image: url("./image/macbookpro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iPhone_16 {
+  padding-top: 50px;
+  color: white;
+  background-image: url("./image/iphone16pro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* commom helper  */
+.baseStructure {
+  height: 500px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.229);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subHeading {
+  margin: 10px 0px;
+  font-size: 25px;
+}
+.heading {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+.rangeText {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: gray;
+  font-size: 20px;
+}
+
+.btnBlueBold {
+  color: white;
+  background-color: rgb(0, 115, 255);
+  font-size: 20px;
+  border: none;
+  padding: 5px 15px 7px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  cursor: pointer;
+}
+.btnBlue {
+  padding: 5px 15px 7px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: 1px solid rgb(0, 115, 255);
+  font-size: 20px;
+  color: rgb(0, 115, 255);
+  cursor: pointer;
+  margin-left: 20px;
+}
+.btnBlue:hover {
+  color: white;
+  background-color: rgb(0, 115, 255);
+}
+.bgBlack {
+  background-color: black;
+}
+
+#floatingLine {
+  font-size: 20px;
+  background: linear-gradient(to right, blue, purple, red, orange);
+  background-clip: text;
+  font-weight: 600;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.colorFullChar :nth-child(1) {
+  color: green;
+}
+.colorFullChar :nth-child(2) {
+  color: yellow;
+}
+.colorFullChar :nth-child(3) {
+  color: orange;
+}
+.colorFullChar :nth-child(4) {
+  color: red;
+}
+.colorFullChar :nth-child(5) {
+  color: purple;
+}
+.colorFullChar :nth-child(6) {
+  color: blue;
+}
+
+.GridDiv {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.griditeam {
+  height: 500px;
+  padding: 50px;
+}
+.gridCard {
+  text-align: center;
+}
+
+.cardSubHeading {
+  margin: 10px 0px;
+  font-size: 20px;
+}
+.cardHeading {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* background images */
+#iPhone16_image {
+  color: white;
+  background-image: url("./image/iphone16.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#Airpods_image {
+  color: white;
+  background-image: url("./image/airpods_pro_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+#card_image {
+  background-image: url("./image/apple_card.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#trade_image {
+  background-image: url("./image/tradein.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#ai_image {
+  background-image: url("./image/promo_ai.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#watch_image {
+  background-image: url("./image/apple_watch.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* footer */
+footer {
+  padding: 10px;
+  background-color: rgba(211, 211, 211, 0.229);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  font-size: 15px;
+  color: gray;
+}
+#topFooter {
+  max-width: 1000px;
+}
+#topFooter > p {
+  margin: 10px 0px;
+}
+
+#contactSection,
+#CopyrightSection,
+#FooterList,
+.HorizontalLine {
+  max-width: 1000px;
+  width: 100%;
+}
+.HorizontalLine {
+  margin: 10px 0px;
+  border-top: 1px solid lightgray;
+}
+#contactSection > p > u {
+  color: rgb(0, 115, 255);
+}
+#contactSection {
+  margin-top: 20px;
+}
+
+#CopyrightSection {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#FooterList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.listcard {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+.listcard > li > ul {
+  list-style: none;
+  padding: 0;
+}
+.listcard > li > b {
+  color: rgb(60, 60, 60);
+  font-weight: normal;
+}
+.listcard > li > ul > li {
+  margin: 10px 0px;
+}
+.listcard > li > ul > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* slider */
+.wrapper {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+.image-container .carousel {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.btnDiv > button {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  background-color: lightgray;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  #hamburger {
+    display: block;
+  }
+  #navList {
+    display: none;
+  }
+  #innerNav {
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  nav {
+    display: block;
+    padding: 0;
+  }
+
+  .subHeading {
+    font-size: 20px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .rangeText {
+    font-size: 18px;
+  }
+
+  .btnBlueBold,
+  .btnBlue {
+    font-size: 18px;
+    padding: 4px 14px 5px;
+  }
+  .cardSubHeading {
+    margin: 10px 0px;
+    font-size: 18px;
+  }
+  .cardHeading {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 840px) {
+  footer {
+    font-size: 12px;
+  }
+  #FooterList {
+    display: block;
+  }
+  .listcard {
+    margin-top: 0px;
+  }
+
+  .listcard > li > ul {
+    display: none;
+  }
+  .listcard > li {
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    position: relative;
+  }
+  .listcard > li::after {
+    content: ">";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 700;
+    rotate: 90deg;
+  }
+  .listcard > li:hover::after {
+    rotate: -90deg;
+  }
+  .listcard > li:hover > ul.dropdown {
+    display: block;
+  }
+  #CopyrightSection {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 730px) {
+  .subHeading,
+  .cardSubHeading {
+    font-size: 17px;
+  }
+  .heading,
+  .cardHeading {
+    font-size: 30px;
+  }
+  .rangeText {
+    font-size: 15px;
+  }
+  .btnBlueBold,
+  .btnBlue {
+    font-size: 15px;
+    padding: 4px 14px 5px;
+  }
+  .btnBlue {
+    margin-left: 10px;
+  }
+  #floatingLine {
+    font-size: 15px;
+  }
+  .GridDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
